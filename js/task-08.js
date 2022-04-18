@@ -8,18 +8,19 @@ function onFormSubmit(event) {
 
     if (email === '' || password === '') {
         alert('Fill all fields please!')
-    }
+    };
 
+    if (email !== '' && password !== '') {
     const formData = {
     email,
     password,
     };
 
     console.log(formData);
-
     event.currentTarget.reset();
+    };
 }
-
+;
 
 
 
